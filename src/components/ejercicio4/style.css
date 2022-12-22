@@ -1,0 +1,38 @@
+.card {
+  width: 350px;
+  margin: 0 30px;
+}
+
+.movieName {
+  padding: 15px 0;
+  background-color: black;
+  color: white;
+}
+
+.puntajeExcelente {
+  background-color: green;
+  padding: 15px 0;
+  color: white;
+}
+.puntajeRegular {
+  background-color: rgb(243, 200, 7);
+  padding: 15px 0;
+  color: white;
+}
+
+.puntaje {
+  background-color: grey;
+  padding: 15px 0;
+  color: white;
+}
+
+.imgDiv img {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 320px;
+  object-fit: cover;
+}
+
+.imgDiv {
+  min-height: 350px;
+}
