@@ -6,7 +6,7 @@ import CartItem from "./CartItem";
 
 const ListaProductos = () => {
   const [cart, setCart] = useState([]);
-
+  const [total, setTotal] = useState(0);
   return (
     <div className="d-flex justify-content-around">
       <div className="ms-4">
@@ -18,6 +18,8 @@ const ListaProductos = () => {
               key={grocerie.id}
               cart={cart}
               setCart={setCart}
+              total={total}
+              setTotal={setTotal}
             />
           );
         })}
@@ -28,12 +30,15 @@ const ListaProductos = () => {
           return (
             <CartItem
               key={item.id}
-              nombre={item.name}
-              precio={item.unitPrice}
-              cantidad={item.quantity}
+              item={item}
+              cart={cart}
+              setCart={setCart}
+              total={total}
+              setTotal={setTotal}
             />
           );
         })}
+        Total: $ {total}
       </div>
     </div>
   );
