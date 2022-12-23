@@ -6,11 +6,13 @@ import Subtitle from "./components/ejercicio2/Subtitle";
 import Description from "./components/ejercicio2/Description";
 import Persona from "./components/ejercicio3/Persona";
 import "bootstrap/dist/css/bootstrap.min.css";
-import Card from "./components/ejercicio4/Card";
-import Pokemon from "./components/ejercicio5/Pokemon";
+// import Card from "./components/ejercicio4/Card";
+import Card from "./components/ejercicio8/Card";
+// import Pokemon from "./components/ejercicio5/Pokemon";
 import infoPokemon from "../src/components/ejercicio5/infoPokemones";
 import Formulario from "./components/ejercicio6/Formulario";
 import ListaProductos from "./components/ejercicio7/ListaProductos";
+import MovieSection from "./components/ejercicio8/MovieSection";
 const srcImgSpiderman =
   "https://i.pinimg.com/550x/a9/d4/3f/a9d43fd80202d3b01a4d661ebf0c512c.jpg";
 const srcImgBatman =
@@ -21,7 +23,9 @@ const srcImgBatmanRobin =
 function App() {
   return (
     <div className="App">
-      <ListaProductos />
+      <MovieSection />
+      {/* <ListaProductos /> */}
+
       {/* <Formulario /> */}
       {/* <div className="d-flex justify-content-around">
         {infoPokemon.map((pokemon) => {
